@@ -10,17 +10,13 @@ Given a log file that records HTTP requests (GET and POST) sent to a set of serv
 
 **Mean payload**: Mean of payloads for each base URL. For computing the mean, consider the following formula (population mean):
 
-$$
-\mu=\frac{1}{N}\sum_{i=1}^{N}x_i
-$$
+![](http://latex.codecogs.com/gif.latex?\mu=\frac{1}{N}\sum_{i=1}^{N}x_i)
 
 where N is the size of the population being explored.
 
 **Variance of payload**: The variance of payloads for each base URL. For computing the variance, consider the following formula (population variance):
 
-$$
-\sigma^2=\frac{1}{N}\sum_{i=1}^{N}{(x_i-\mu)}^2
-$$
+![](http://latex.codecogs.com/gif.latex?\sigma^2=\frac{1}{N}\sum_{i=1}^{N}{(x_i-\mu)}^2)
 
 where N is the population size and 𝜇 is the population mean.
 

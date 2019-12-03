@@ -29,7 +29,13 @@ where N is the population size and 𝜇 is the population mean.
 The log file in input is a CSV file that contains one line HTTP per request. The file consists of three columns: Base URL of the HTTP request, endpoint, HTTP method, and size of payload. An excerpt of the log is shown below:
 
 ```
-http://subdom0001.example.com,/endpoint0001,POST,3B http://subdom0002.example.com,/endpoint0002,GET,431MB http://subdom0003.example.com,/endpoint0003,POST,231KB http://subdom0002.example.com,/endpoint0002,GET,29MB http://subdom0001.example.com,/endpoint0001,POST,238B http://subdom0002.example.com,/endpoint0001,GET,32MB http://subdom0003.example.com,/endpoint0003,GET,21KB
+http://subdom0001.example.com,/endpoint0001,POST,3B
+http://subdom0002.example.com,/endpoint0002,GET,431MB
+http://subdom0003.example.com,/endpoint0003,POST,231KB
+http://subdom0002.example.com,/endpoint0002,GET,29MB
+http://subdom0001.example.com,/endpoint0001,POST,238B
+http://subdom0002.example.com,/endpoint0001,GET,32MB
+http://subdom0003.example.com,/endpoint0003,GET,21KB
 ```
 
 Notice that the payload is given in different units of digital information (e.g. MB and KB). The log file for this assignment will contain the following units only: B (for bytes), KB (for kilobytes) and MB (for megabytes).
@@ -39,7 +45,9 @@ Notice that the payload is given in different units of digital information (e.g.
 The output consists in a CSV file that contains the list of base URLs along with the descriptive statistics (for each base URL) as presented in Section 1. We show a sample output below:
 
 ```
-http://subdom0001.example.com,3B,238B,120B,13806B http://subdom0002.example.com,30408704B,451936256B,171966464B,39193191483703296B http://subdom0003.example.com,21504B,236544B,129024B,11560550400B
+http://subdom0001.example.com,3B,238B,120B,13806B
+http://subdom0002.example.com,30408704B,451936256B,171966464B,39193191483703296B
+http://subdom0003.example.com,21504B,236544B,129024B,11560550400B
 ```
 
 The columns in the output above are as follows: Base URL, minimum payload, maximum payload, mean payload, variance of payload. You do not need to provide a header for your CSV file.
